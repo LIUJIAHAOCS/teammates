@@ -3,6 +3,8 @@
 <c:set var="jsIncludes">
     <script type="text/javascript" src="/js/checkBrowserVersion.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/jq.js"></script>
+    <script type="text/javascript" src="/js/ads.js"></script>
 </c:set>
 <t:staticPage jsIncludes="${jsIncludes}" currentPage="index">
     <div id="browserMessage" style="display: none;"></div>
@@ -124,6 +126,33 @@
                 the <a href="https://iated.org/edulearn13/" target="_blank" rel="noopener noreferrer">EDULEARN13 Conference (Spain)</a>,
                 and the <a href="http://cdtl.nus.edu.sg/tel2013/" target="_blank" rel="noopener noreferrer">Tel2013 Symposium (Singapore)</a>.
             </p>
+        </div>
+    </div>
+
+    <style>
+        html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, code, em, img, small, strong, sub, sup, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        img{border:none}
+        #pop{background:#fff;width:220px; height:180px;font-size:12px;position:fixed;right:0;bottom:0;}
+        #popHead{line-height:32px;background:#f6f0f3;border-bottom:1px solid #e0e0e0;font-size:12px;padding:0 0 0 10px;}
+        #popHead h2{font-size:14px;color:#666;line-height:32px;height:32px;}
+        #popHead #popClose{position:absolute;right:10px;top:1px;}
+        #popHead a#popClose:hover{color:#f00;cursor:pointer;}
+    </style>
+
+    <div id="pop">
+        <div id="popHead">
+            <h2>Welcome to teammates!</h2>
+        </div>
+        <div id="popContent">
+            <a href="features.jsp"><img src="https://teammatesv4.appspot.com/images/overview_praise.png" width="220" height="140"></a>
         </div>
     </div>
 </t:staticPage>
